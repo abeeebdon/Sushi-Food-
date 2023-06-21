@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi shopping_cart</title>
+    <link rel="stylesheet" href="./styles/cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="aside">
+          <div class="icon-wrapper">
+            <div class="icon">
+              <a href="#"> <img src="./menu_images/s.png" alt="" /></a>
+            </div>
+            <div class="icon" id="home">
+              <a href="index.html">
+                <img src="./menu_images/home.png" alt=""
+              /></a>
+            </div>
+            <div class="icon" id="menu">
+              <a href="menu.html">
+                <img src="./menu_images/restaurant_menu_.png" alt=""
+              /></a>
+            </div>
+            <div class="icon" id="cart">
+              <a href="cart.html">
+                <img src="./menu_images/shopping_cart.png" alt=""
+              /></a>
+            </div>
+
+            <div class="icon">
+              <a href="#"> <img src="./menu_images/location.png" alt="" /></a>
+            </div>
+            <div class="icon">
+              <a href="#">
+                <img src="./menu_images/Vector(2).png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <div>
+            <h1 class="cart-text inline">CART</h1>
+          </div>
+          <!-- <div class="cart-wrapper"> -->
+          <!-- first -->
+          <!-- <div class="food-type">
+              <div class="img">
+                <img
+                  src="./menu_images/smashed_avo.png"
+                  width="100px"
+                  height="100px"
+                  alt="smashed_avo"
+                  class="img"
+                />
+              </div>
+              <div class="food-name">
+                <p>Smashed Avo</p>
+                <p class="price">$20.00</p>
+              </div>
+              <div class="math-wrap padding">
+                <div class="add inline">
+                  <button class="btn" id="btnIS">+</button>
+                </div>
+                <div class="result inline">
+                  <span class="results" id="result">0</span>
+                </div>
+
+                <div class="decrease inline">
+                  <button class="btn" id="btnDS">-</button>
+                </div>
+              </div>
+              <div class="cancel-wrap padding">
+                <div class="cancel">
+                  <button class="btn" id="btnCancel">x</button>
+                </div>
+              </div>
+            </div> -->
+          <!-- second  -->
+          <!-- <div class="food-type">
+              <div class="img">
+                <img
+                  src="./menu_images/Yin and Yang.png"
+                  width="100px"
+                  height="100px"
+                  alt="YinandYang"
+                  class="img"
+                />
+              </div>
+              <div class="food-name">
+                <p>Yin $ Yang</p>
+                <p class="price">$10.00</p>
+              </div>
+              <div class="math-wrap padding">
+                <div class="add inline">
+                  <button class="btnIY btn">+</button>
+                </div>
+                <div class="result inline">
+                  <span class="results">1</span>
+                </div>
+
+                <div class="decrease inline">
+                  <button class="btnDY btn">-</button>
+                </div>
+              </div>
+              <div class="cancel-wrap padding">
+                <div class="cancel">
+                  <button class="btn-cancel btn">x</button>
+                </div>
+              </div>
+            </div> -->
+          <!-- third -->
+          <!-- <div class="food-type">
+              <div class="img">
+                <img
+                  src="./menu_images/smashed_avo.png"
+                  width="100px"
+                  height="100px"
+                  alt="smashed_avo"
+                  class="img"
+                />
+              </div>
+              <div class="food-name">
+                <p>Smashed Avo</p>
+                <p class="price">$20.00</p>
+              </div>
+              <div class="math-wrap padding">
+                <div class="add inline">
+                  <button class="btnIS btn">+</button>
+                </div>
+                <div class="result inline">
+                  <span class="results">1</span>
+                </div>
+
+                <div class="decrease inline">
+                  <button class="btnDS btn">-</button>
+                </div>
+              </div>
+              <div class="cancel-wrap padding">
+                <div class="cancel">
+                  <button class="btn-cancel btn">x</button>
+                </div>
+              </div>
+            </div> -->
+          <!-- fourth -->
+          <!-- <div class="food-type">
+              <div class="img">
+                <img
+                  src="./menu_images/smashed_avo.png"
+                  width="100px"
+                  height="100px"
+                  alt="smashed_avo"
+                  class="img"
+                />
+              </div>
+              <div class="food-name">
+                <p>Smashed Avo</p>
+                <p class="price">$20.00</p>
+              </div>
+              <div class="math-wrap padding">
+                <div class="add inline">
+                  <button class="btnIS btn">+</button>
+                </div>
+                <div class="result inline">
+                  <span class="results">1</span>
+                </div>
+
+                <div class="decrease inline">
+                  <button class="btnDS btn">-</button>
+                </div>
+              </div>
+              <div class="cancel-wrap padding">
+                <div class="cancel">
+                  <button class="btn-cancel btn">x</button>
+                </div>
+              </div>
+            </div> -->
+          <!-- </div> -->
+        </div>
+        <div class="sub">
+          <div class="sub-wrapper">
+            <div class="text">
+              <div class="subtotal">
+                <h1>Your Subtotal</h1>
+                <div>
+                  <p>Subtotal</p>
+                  <p>$ <span id="amount">00</span>.00</p>
+                </div>
+                <div class="button">
+                  <button>Confirm order</button>
+                </div>
+              </div>
+            </div>
+            <!--  PROMO CODE -->
+            <div class="text bg-white">
+              <div class="subtotal">
+                <h1>Promocode</h1>
+                <div class="input">
+                  <input type="text" placeholder="enter promo code" />
+                </div>
+                <div class="button">
+                  <button>Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <p class="copyright">Copyright © 2021 Sushi Restaurant</p>
+        </div>
+      </footer>
+    </div>
+    <script src="sushi.js"></script>
+  </body>
+</html>
