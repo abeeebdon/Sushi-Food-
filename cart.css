@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "mulish", sans-serif;
+  font-size: 1rem;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* the grid container holds everything on the 
+page
+ and is divided into three grid columns
+ */
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 2fr 1fr;
+  padding: 20px;
+}
+.cart {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+.sub {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.copyright {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.aside {
+  grid-row-start: 1;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+/* Styling 
+the
+ icon  */
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  gap: 20px;
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.icon {
+  /* box-sizing: border-box; */
+  padding: 15px 2px;
+  width: 100px;
+  height: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+.icon a img {
+  width: 50px;
+  height: 50px;
+}
+#menu {
+  background-color: white;
+}
+
+/* .......................
+.
+.
+.
+.
+.
+
+
+.
+.... */
+
+/* styling 
+the
+ cart */
+.cart-text {
+  border: none;
+  border-bottom: 5px solid rgb(255, 213, 161);
+}
+
+.food-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: rgb(255, 233, 206);
+}
+.inline {
+  display: inline-block;
+}
+.padding {
+  padding-top: 20px;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  background-color: rgb(255, 233, 206);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.img {
+  border-radius: 50%;
+}
+.food-name {
+  font-size: 1.2rem;
+}
+.results {
+  background-color: white;
+  padding: 10px;
+}
+/* 
+THE subtotal is found in the third grid
+
+styling 
+the
+ subtotal */
+.sub {
+  padding-top: 15px;
+  margin-top: 50px;
+}
+.sub-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.text {
+  padding: 20px;
+  background-color: rgb(255, 233, 206);
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid whitesmoke;
+}
+.subtotal {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.input {
+  height: 60px;
+}
+.input input {
+  height: 40px;
+  padding: 5px;
+  width: 200px;
+  font-size: 1rem;
+}
+.button button {
+  color: white;
+  background-color: black;
+  width: 120px;
+  height: 45px;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/* Styling the footer */
+footer {
+  width: 80vw;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px;
+  font-size: 14px;
+}
